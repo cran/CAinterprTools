@@ -4,8 +4,17 @@
 \alias{caPlus}
 \title{Facility for interpretation-oriented CA scatterplot}
 \usage{
-caPlus(data, x = 1, y = 2, focus, row.suppl = FALSE, col.suppl = FALSE,
-  oneplot = FALSE, inches = 0.35, cex = 0.5)
+caPlus(
+  data,
+  x = 1,
+  y = 2,
+  focus,
+  row.suppl = FALSE,
+  col.suppl = FALSE,
+  oneplot = FALSE,
+  inches = 0.35,
+  cex = 0.5
+)
 }
 \arguments{
 \item{data}{Object returned by the FactoMineR's CA() function (see example

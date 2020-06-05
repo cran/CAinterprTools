@@ -11,14 +11,18 @@
 #'the Goodness of Fit statistic is also reported. The function also returns a
 #'dataframe storing the categories' coordinates on the selected dimension and
 #'the group each category belongs to.
+#'
 #'@param data Name of the dataset (must be in dataframe format).
 #'@param x Dimension whose coordinates are used to build the partitions.
 #'@param k Number of groups.
 #'@param which Speficy if rows ("rows"; default) or columns ("cols") must be
 #'  grouped.
 #'@param cex.labls Set the size of the labels of the dot chart (0.75 by default).
+#'
 #'@keywords groupBycoord
+#'
 #'@export
+#'
 #' @examples
 #' data(greenacre_data)
 #'

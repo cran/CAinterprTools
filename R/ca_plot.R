@@ -39,6 +39,7 @@
 #' (h) correlation with the second selected dimension \cr (j) (k) asterisks
 #' indicating whether the corresponding category is a major contribution to the
 #' first and/or second selected dimension.
+#' 
 #' @param data Contingency table, in dataframe format.
 #' @param x First of the two desired dimensions to be plotted. 1 is the default.
 #' @param y Second of the two desired dimensions to be plotted. 2 is the
@@ -57,25 +58,31 @@
 #'   default.
 #' @param cex.percept Sets the size of the characters displayed in the axes'
 #'   labels featuring the perceptual map. 3 is the default.
+#'   
 #' @keywords caPlot
+#' 
 #' @export
+#' 
 #' @examples
 #' data(brand_coffee)
 #' 
 #' #displays a 'regular' (symmetric) CA scatterplot, with row and column categories displayed in the 
 #' #same space, and with points' labels just reporting the categories' names. 
 #' #Relevant information (see description above) are stored in the variable 'res'.
+#' 
 #' res <- caPlot(brand_coffee,1,2,adv.labls=FALSE)
 #' 
 #' #displays the CA scatterplot, with the columns' labels indicating which category 
 #' # has a major contribution to the definition of the selected dimensions. 
 #' # Rows' labels report the correlation (i.e., sqrt(COS2)) with the selected dimensions.
+#' 
 #' res <- caPlot(brand_coffee,1,2,cntr="columns")
 #' 
 #'
 #' #displays the CA scatterplot, with the rows' labels indicating 
 #' #which category has a major contribution to the definition of the selected dimensions. 
 #' #Columns' labels report the correlation (i.e., sqrt(COS2)) with the selected dimensions.
+#' 
 #' res <- caPlot(brand_coffee,1,2,cntr="rows")
 #' 
 #'
@@ -84,6 +91,7 @@
 #' #to the column categories that have a major contribution to the definition 
 #' #of the selected dimensions. Rows' labels report the correlation (i.e., sqrt(COS2)) 
 #' #with the selected dimensions.
+#' 
 #' res <- caPlot(brand_coffee,1,2,cntr="columns", percept=TRUE)
 #' 
 #' @seealso \code{\link{caPercept}} , \code{\link{caPlus}}

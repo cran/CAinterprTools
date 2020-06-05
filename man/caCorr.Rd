@@ -10,7 +10,7 @@ caCorr(data)
 \item{data}{Name of the dataset (in dataframe format).}
 }
 \description{
-This function allows you to calculate the strength of the correlation between
+This function calculates the strength of the correlation between
 rows and columns of the contingency table. A reference line indicates the
 threshold above which the correlation can be considered important.
 }

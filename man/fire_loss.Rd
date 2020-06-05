@@ -4,7 +4,9 @@
 \name{fire_loss}
 \alias{fire_loss}
 \title{Dataset: Cross-tabulation of cause of fire vs. amount of money loss}
-\format{dataframe}
+\format{
+dataframe
+}
 \usage{
 data(fire_loss)
 }

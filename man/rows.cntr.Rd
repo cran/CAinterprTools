@@ -4,9 +4,18 @@
 \alias{rows.cntr}
 \title{Rows contribution chart}
 \usage{
-rows.cntr(data, x = 1, categ.sort = TRUE, corr.thrs = 0, leg = TRUE,
-  cex.labls = 0.75, dotprightm = 5, cex.leg = 0.6, leg.x.spc = 1,
-  leg.y.spc = 1)
+rows.cntr(
+  data,
+  x = 1,
+  categ.sort = TRUE,
+  corr.thrs = 0,
+  leg = TRUE,
+  cex.labls = 0.75,
+  dotprightm = 5,
+  cex.leg = 0.6,
+  leg.x.spc = 1,
+  leg.y.spc = 1
+)
 }
 \arguments{
 \item{data}{Name of the dataset (must be in dataframe format).}

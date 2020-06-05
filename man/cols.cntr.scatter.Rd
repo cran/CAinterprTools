@@ -39,6 +39,7 @@ the y-axis).
 data(greenacre_data)
 
 #Plots the scatterplot of the column categories contribution to dimensions 1&2.
+
 cols.cntr.scatter(greenacre_data,1,2)
 
 }

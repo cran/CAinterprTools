@@ -1,8 +1,8 @@
 #' Clustering row/column categories on the basis of Correspondence Analysis
 #' coordinates from a space of user-defined dimensionality.
 #'
-#' This function allows to plot the result of cluster analysis performed on the
-#' results of Correspondence Analysis, providing the facility to plot a
+#' This function plots the result of cluster analysis performed on the
+#' results of Correspondence Analysis, providing the facility to produce a
 #' dendrogram, a silhouette plot depicting the "quality" of the clustering
 #' solution, and a scatterplot with points coded according to the cluster
 #' membership.
@@ -79,7 +79,7 @@
 #' "Correspondence Analysis in Practice", Boca Raton-London-New York,
 #' Chapman&Hall/CRC, 267-268.
 #'
-#' @param data Contingency table, in dataframe format.
+#' @param data Contingency table (dataframe format).
 #' @param which Takes "both" to cluster both row and column categories; "rows"
 #'   or "columns" to cluster only row or column categories respectively
 #' @param dim Sets the dimensionality of the space whose coordinates are used to
@@ -108,8 +108,11 @@
 #'   the default.
 #' @param cex.sctpl.lab Sets the size of the Correspondence Analysis
 #'   scatterplot's labels. 3.5 is the default.
+#'   
 #' @keywords caCluster
+#' 
 #' @export
+#' 
 #' @examples
 #' data(brand_coffee)
 #' 
@@ -121,16 +124,19 @@
 #' #the optimal partition method (see Details). A silhouette plot, a scatterplot, and a CA 
 #' #scatterplot with indication of cluster membership are also produced (see Details). 
 #' #The cluster membership is stored in the object 'res'.
+#' 
 #' res <- caCluster(brand_coffee, opt.part=TRUE)
 #'
 #' #displays a dendrogram for row categories, with rectangles indicating the clusters defined by the 
 #' #optimal partition method (see Details). The clustering is based on a space of dimensionality 4. 
 #' #A silhouette plot, a scatterplot, and a CA scatterplot with indication of cluster membership are 
 #' #also produced (see Details). The cluster membership is stored in the object 'res'.
-#'  res <- caCluster(brand_coffee, which="rows", dim=4, opt.part=TRUE)
+#' 
+#' res <- caCluster(brand_coffee, which="rows", dim=4, opt.part=TRUE)
 #'
 #' #like the above example, but the clustering is based on the coordinates on the sub-space defined 
 #' #by a pair of dimensions (i.e., 1 and 4).
+#' 
 #' res <- caCluster(brand_coffee, which="rows", dim=c(1,4), opt.part=TRUE)
 #' 
 #' @seealso \code{\link{groupBycoord}}

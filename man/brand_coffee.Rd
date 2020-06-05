@@ -4,7 +4,9 @@
 \name{brand_coffee}
 \alias{brand_coffee}
 \title{Dataset: Cross-tabulation of coffee brands vs. consumers' opinion}
-\format{dataframe}
+\format{
+dataframe
+}
 \usage{
 data(brand_coffee)
 }

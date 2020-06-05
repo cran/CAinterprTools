@@ -4,9 +4,18 @@
 \alias{cols.cntr}
 \title{Columns contribution chart}
 \usage{
-cols.cntr(data, x = 1, categ.sort = TRUE, corr.thrs = 0, leg = TRUE,
-  cex.labls = 0.75, dotprightm = 5, cex.leg = 0.6, leg.x.spc = 1,
-  leg.y.spc = 1)
+cols.cntr(
+  data,
+  x = 1,
+  categ.sort = TRUE,
+  corr.thrs = 0,
+  leg = TRUE,
+  cex.labls = 0.75,
+  dotprightm = 5,
+  cex.leg = 0.6,
+  leg.x.spc = 1,
+  leg.y.spc = 1
+)
 }
 \arguments{
 \item{data}{Name of the dataset (must be in dataframe format).}
@@ -60,6 +69,7 @@ data(greenacre_data)
 #categories to the 2nd CA dimension, and also displays the contribution to the total inertia.
 #The categories are sorted in descending order of contribution
 #to the inertia of the selected dimension.
+
 cols.cntr(greenacre_data, 2, categ.sort=TRUE)
 
 }

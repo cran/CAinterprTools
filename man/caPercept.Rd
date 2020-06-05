@@ -4,8 +4,15 @@
 \alias{caPercept}
 \title{Perceptual map-like Correspondence Analysis scatterplot}
 \usage{
-caPercept(data, x = 1, y = 2, focus = "row", dim.corr = x,
-  guide = FALSE, size.labls = 3)
+caPercept(
+  data,
+  x = 1,
+  y = 2,
+  focus = "row",
+  dim.corr = x,
+  guide = FALSE,
+  size.labls = 3
+)
 }
 \arguments{
 \item{data}{Contingency table, in dataframe format.}

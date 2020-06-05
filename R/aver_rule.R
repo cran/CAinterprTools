@@ -1,9 +1,10 @@
 #' Average Rule chart
 #'
-#' This function allows to locate the number of dimensions which are
-#' important for CA interpretation, according to the so-called average rule. The
+#' This function helps locating the number of dimensions that are
+#' important for CA interpretation, according to the so-called 'average rule'. The
 #' reference line showing up in the returned histogram indicates the threshold
-#' of an optimal dimensionality of the solution according to the average rule.
+#' for an optimal dimensionality of the solution according to the average rule.
+#' 
 #' @param data Name of the dataset (must be in dataframe format).
 #' 
 #' @keywords aver.rule

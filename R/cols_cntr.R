@@ -14,6 +14,7 @@
 #'parameter) reports the correlation (sqrt(COS2)) of the row categories with the selected dimension.
 #'A symbol (+ or -) indicates with which side of the selected dimension each row category is
 #'correlated.
+#'
 #'@param data Name of the dataset (must be in dataframe format).
 #'@param x Dimension for which the column categories contribution is returned (1st dimension by
 #'  default).
@@ -31,8 +32,11 @@
 #'  'legend' function's help (?legend).
 #'@param leg.y.spc Adjust the y interspace of the chart's legend. See more info from the 'legend'
 #'  function's help (?legend).
+#'  
 #'@keywords cols.cntr
+#'
 #'@export
+#'
 #' @examples
 #' data(greenacre_data)
 #'
@@ -40,6 +44,7 @@
 #' #categories to the 2nd CA dimension, and also displays the contribution to the total inertia.
 #' #The categories are sorted in descending order of contribution
 #' #to the inertia of the selected dimension.
+#' 
 #' cols.cntr(greenacre_data, 2, categ.sort=TRUE)
 #'
 #' @seealso \code{\link{cols.cntr.scatter}} , \code{\link{rows.cntr}} ,

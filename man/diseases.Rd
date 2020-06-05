@@ -5,7 +5,9 @@
 \alias{diseases}
 \title{Dataset: Cross-tabulation of quantity of tobacco smoked daily vs. cause of
 death}
-\format{dataframe}
+\format{
+dataframe
+}
 \usage{
 data(diseases)
 }

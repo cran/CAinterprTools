@@ -7,6 +7,7 @@
 #' problem of interpreting inter-spatial distance. It represents only one type
 #' of points (say, column points), and "gives names to the axes" corresponding
 #' to the major row category contributors to the two selected dimensions.
+#' 
 #' @param data Contingency table, in dataframe format.
 #' @param x First dimensions to be plotted.
 #' @param y Second dimensions to be plotted.
@@ -22,8 +23,11 @@
 #'   dimension they have a higher relative correlation.
 #' @param size.labls Adjust the size of the characters used in the labels that
 #'   give names to the axes.
+#'   
 #' @keywords caPercept
+#' 
 #' @export
+#' 
 #' @examples
 #' data(brand_coffee)
 #' 

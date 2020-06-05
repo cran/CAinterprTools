@@ -4,7 +4,9 @@
 \name{greenacre_data}
 \alias{greenacre_data}
 \title{Dataset: Cross-tabulation of funding category vs. University faculty}
-\format{dataframe}
+\format{
+dataframe
+}
 \usage{
 data(greenacre_data)
 }

@@ -4,7 +4,9 @@
 \name{breakfast}
 \alias{breakfast}
 \title{Dataset: Cross-tabulation of breakfast food vs consumers' opinion}
-\format{dataframe}
+\format{
+dataframe
+}
 \usage{
 data(breakfast)
 }

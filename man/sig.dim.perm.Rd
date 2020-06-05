@@ -4,7 +4,7 @@
 \alias{sig.dim.perm}
 \title{Permuted significance of CA dimensions}
 \usage{
-sig.dim.perm(data, x = 1, y = 2, B = 1000)
+sig.dim.perm(data, x = 1, y = 2, B = 999)
 }
 \arguments{
 \item{data}{Name of the dataset (must be in dataframe format).}
@@ -13,22 +13,27 @@ sig.dim.perm(data, x = 1, y = 2, B = 1000)
 
 \item{y}{Second dimension whose significance is calculated (y=2 by default).}
 
-\item{B}{Number of permutations (1000 by default).}
+\item{B}{Number of permutations (999 by default).}
+}
+\value{
+The function returns a dataframe storing the permuted p-values of each CA dimension.
 }
 \description{
-This function allows you to calculate the permuted significance of selected
+This function calculates the permuted significance of a pair of selected
 CA dimensions. Number of permutation set at 999 by default, but can be
-increased by the user. Since the function returns a scatterplot, the function
-requires that two dimensions are entered.
+increased by the user. 
+A scatterplot of the permuted inertia of a pair of selected dimensions is produced.
+Permuted p.values are reported in the axes' labels and are also returned in a dataframe.
 }
 \examples{
 data(greenacre_data)
 
-#Returns a scatterplot of the permuted inertia of the 1 CA dimension
+#Produces a scatterplot of the permuted inertia of the 1 CA dimension
 #against the permuted inertia of the 2 CA dimension.
-#The observed inertia of the selected dimensions is also displayed as a large red dot; 
-#pvalues are reported in the axes labels.
-sig.dim.perm(greenacre_data, 1,2)
+#The observed inertia of the selected dimensions is displayed as a large red dot; 
+#pvalues are reported in the axes labels (and are stored in a 'pvalues' object).
+
+pvalues <- sig.dim.perm(greenacre_data, 1,2, B=99)
 
 }
 \seealso{

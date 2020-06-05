@@ -5,12 +5,12 @@
 \title{Scree plot to test the significance of CA dimensions by means of a randomized
 procedure}
 \usage{
-sig.dim.perm.scree(data, B = 1000, cex = 0.7, pos = 4, offset = 0.5)
+sig.dim.perm.scree(data, B = 999, cex = 0.7, pos = 4, offset = 0.5)
 }
 \arguments{
 \item{data}{Name of the contingency table (must be in dataframe format).}
 
-\item{B}{Number of permutations to be used (1000 by default).}
+\item{B}{Number of permutations to be used (999 by default).}
 
 \item{cex}{Controls the size of the labels reporting the p values; see the
 help documentation of the text() function by typing ?text.}
@@ -21,20 +21,23 @@ the help documentation of the text() function by typing ?text.}
 \item{offset}{Controls the offset of the labels reporting the p values; see
 the help documentation of the text() function by typing ?text.}
 }
+\value{
+The function returns a dataframe storing the permuted p-values of each CA dimension.
+}
 \description{
-This function allows to test the significance of the CA dimensions by means
+This function tests the significance of the CA dimensions by means
 of permutation of the input contingency table. Number of permutation set at
-1000 by default, but can be increased by the user. The function return a
+999 by default, but can be increased by the user. The function return a
 scree-plot displaying for each dimension the observed eigenvalue and the 95th
 percentile of the permuted distribution of the corresponding eigenvalue.
 Observed eigenvalues that are larger than the corresponding 95th percentile
-are significant at least at alpha 0.05. P values are displayed into the
-chart.
+are significant at least at alpha 0.05. Permuted p-values are displayed into the
+chart and also returned as dataframe.
 }
 \examples{
 data(greenacre_data)
 
-sig.dim.perm.scree(greenacre_data, 1000)
+pvalues <- sig.dim.perm.scree(greenacre_data, 99)
 
 }
 \seealso{

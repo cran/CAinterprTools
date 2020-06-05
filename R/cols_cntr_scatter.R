@@ -13,6 +13,7 @@
 #' reported on the x-axis). The second symbol (i.e., the one to the right)
 #' refers to the second of the selected dimensions (i.e., the one reported on
 #' the y-axis).
+#' 
 #' @param data Name of the dataset (must be in dataframe format).
 #' @param x First dimension for which the contributions are reported (x=1 by
 #'   default).
@@ -21,12 +22,16 @@
 #' @param filter Filter the categories in order to only display those who have a
 #'   major contribution to the definition of the selected dimensions.
 #' @param cex.labls Adjust the size of the categories' labels
+#' 
 #' @keywords cols.cntr.scatter
+#' 
 #' @export
+#' 
 #' @examples
 #' data(greenacre_data)
 #'
 #' #Plots the scatterplot of the column categories contribution to dimensions 1&2.
+#' 
 #' cols.cntr.scatter(greenacre_data,1,2)
 #' 
 #' @seealso \code{\link{cols.cntr}} , \code{\link{rows.cntr}} , \code{\link{rows.cntr.scatter}}

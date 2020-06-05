@@ -4,9 +4,18 @@
 \alias{cols.corr}
 \title{Chart of columns correlation with a selected dimension}
 \usage{
-cols.corr(data, x = 1, categ.sort = TRUE, filter = FALSE, leg = TRUE,
-  dotprightm = 5, cex.leg = 0.6, cex.labls = 0.75, leg.x.spc = 1,
-  leg.y.spc = 1)
+cols.corr(
+  data,
+  x = 1,
+  categ.sort = TRUE,
+  filter = FALSE,
+  leg = TRUE,
+  dotprightm = 5,
+  cex.leg = 0.6,
+  cex.labls = 0.75,
+  leg.x.spc = 1,
+  leg.y.spc = 1
+)
 }
 \arguments{
 \item{data}{Name of the dataset (must be in dataframe format).}
